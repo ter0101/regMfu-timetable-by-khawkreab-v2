@@ -21,9 +21,9 @@
         <a href="#" data-toggle="collapse" data-target="#collapseOneA" aria-expanded="true" aria-controls="collapseOneA">
         Software Engineering
         </a>
-        <div id="collapseOneA" class="collapse" aria-labelledby="headingOneA" data-parent="#accordion1">
-          <div class="major-detail">
-            <div *ngFor="let item of result" class=" d-flex flex-row flex-wrap" style="margin-left: 30px;">
+        <div id="collapseOneA" class="collapse " aria-labelledby="headingOneA" data-parent="#accordion1">
+          <div class="major-detail d-flex flex-row flex-wrap">
+            <div *ngFor="let item of result"style="margin-left: 30px;">
 
               <a [routerLink]="[ '/detail', item._id]">
                 <img src="../assets/img/SE/{{ item.picture }}">
