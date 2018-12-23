@@ -1,0 +1,105 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a:link {
+  text-decoration: none
+}
+
+.x-line{
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background-color: #555;
+}
+
+header img{
+  object-fit: cover;
+  width: 100%;
+}
+
+button:focus {
+  outline: transparent;
+  border-bottom: 2px solid #05ff0c
+}
+
+.menu {
+  position: fixed;
+  width: 20vw;
+  height: 100%;
+  background-color: #777;
+  top: 0;
+}
+
+.menu img{
+  width: 50%;
+  margin-left: calc(50% - 68px);
+}
+
+.menu p{
+  text-align: center;
+  color: #fff;
+}
+
+.menu li {
+  border-bottom: 1px solid #eee;
+}
+
+.menu li:hover {
+  background-color: #aaa;
+  color: white;
+}
+
+.menu li a {
+  display: block;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none
+}
+
+#accordion {
+  margin-left: 10px;
+  width: 50%;
+}
+
+.btn-custom {
+  display: flex;
+  text-align: left;
+  padding: 5px;
+  border: 0;
+  border-bottom: 2px solid #1087ff;
+  cursor: pointer;
+  margin-bottom: 5px;
+  background-color: transparent;
+}
+
+.btn-custom i {
+  margin-left: auto;
+}
+
+.major > div > a {
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 10px;
+  transition: all .5s;
+}
+
+.major > div > a:after {
+  position: absolute;
+  content: '\f0a9';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  right: 0;
+}
+

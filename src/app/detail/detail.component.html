@@ -1,0 +1,73 @@
+<div class="schedule">
+  <img src="../assets/img/SE/{{ result.picture }}">
+  <h1> {{ result.title }} {{ result.fname }} {{ result.lname }}</h1>
+  <div *ngFor="let item of result.scheduleid">
+    <table class="table">
+      <tr>
+        <td> <strong>Sunday  </strong></td>
+        <td>
+          <div *ngFor="let sunday of item.sunday">
+            <strong>Time</strong> {{ sunday.time }} &nbsp; <strong>Coures</strong> {{ sunday.coures }} &nbsp; <strong>Section:</strong>
+            {{ sunday.section }}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td> <strong> Monday  </strong></td>
+        <td>
+          <div *ngFor="let monday of item.monday">
+            <strong>Time</strong> {{ monday.time }} &nbsp; <strong>Coures</strong> {{ monday.coures }}&nbsp; <strong>Section:</strong>
+            {{ monday.section }}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td> <strong>Tuesday  </strong></td>
+        <td>
+          <div *ngFor="let tueday of item.tueday">
+            <strong>Time</strong> {{ tueday.time }} &nbsp; <strong>Coures</strong> {{ tueday.coures }} &nbsp; <strong>Section:</strong>
+            {{ tueday.section }}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td> <strong>Wednesday  </strong></td>
+        <td>
+          <div *ngFor="let wedday of item.wedday">
+            <strong>Time</strong> {{ wedday.time }} &nbsp; <strong>Coures</strong> {{ wedday.coures }} &nbsp; <strong>Section:</strong>
+            {{ wedday.section }}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td> <strong>Thursday  </strong></td>
+        <td>
+          <div *ngFor="let thuday of item.thuday">
+            <strong>Time</strong> {{ thuday.time }} &nbsp; <strong>Coures</strong> {{ thuday.coures }} &nbsp; <strong>Section:</strong>
+            {{ thuday.section }}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td> <strong>Friday  </strong></td>
+        <td>
+          <div *ngFor="let tueday of item.friday">
+            <strong>Time</strong> {{ friday.time }} &nbsp; <strong>Coures</strong> {{ friday.coures }} &nbsp; <strong>Section:</strong>
+            {{ friday.section }}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td> <strong>Saturday  </strong></td>
+        <td>
+          <div *ngFor="let satday of item.satday">
+            <strong>Time</strong> {{ satday.time }} &nbsp; <strong>Coures</strong> {{ satday.coures }} &nbsp; <strong>Section:</strong>
+            {{ satday.section }}
+          </div>
+        </td>
+      </tr>
+
+    </table>
+
+  </div>
+</div>

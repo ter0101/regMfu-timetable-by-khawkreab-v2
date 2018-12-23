@@ -1,0 +1,66 @@
+<div class="search">
+  <span>SPECIFY INSTRUCTOR NAME </span>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+  </form>
+
+</div>
+<!-- colapse school of -->
+<!--/.Accordion wrapper-->
+<!--ACCORDION INSIDE ACCORDION ITEM-->
+<div id="accordion" class="d-flex flex-column">
+  <button class="btn-custom" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    School of Information Thecnology <i class="fas fa-angle-right"></i>
+  </button>
+  <!-- major -->
+  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+    <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+    <div class="major" id="accordion1">
+      <div class=" d-flex flex-column" style="margin-left: 30px;">
+        <a href="#" data-toggle="collapse" data-target="#collapseOneA" aria-expanded="true" aria-controls="collapseOneA">
+        Software Engineering
+        </a>
+        <div id="collapseOneA" class="collapse" aria-labelledby="headingOneA" data-parent="#accordion1">
+          <div class="major-detail">
+            <div *ngFor="let item of result" class=" d-flex flex-row flex-wrap" style="margin-left: 30px;">
+
+              <a [routerLink]="[ '/detail', item._id]">
+                <img src="../assets/img/SE/{{ item.picture }}">
+               <p> {{ item.title }} {{ item.fname }} {{ item.lname }}</p>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end ACCORDION INSIDE ACCORDION ITEM TWO-->
+
+  </div> <!-- end major -->
+  <!--end ACCORDION INSIDE ACCORDION ITEM-->
+</div>
+<!--end of col-->
+
+<!-- <div class="content">
+  <div *ngFor="let item of result">
+    <div class="content-box">
+      <a [routerLink]="[ '/detail', item._id]">
+        <h1>{{ item.majorname }}</h1>
+     
+      </a>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div *ngFor="let item of result">
+  <div style="display: inline-flex">
+    <h3>{{ item.title }}: {{ item.description }}</h3><br>
+    <div *ngFor="let room of item.room">
+      <p>{{ room.title }}</p>
+      <div *ngFor="let schdules of room.schdules">
+        <p>{{ schdules.title }}: {{ schdules.time }}</p>
+      </div>
+    </div>
+  </div>
+</div>  -->
